@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products in Real Time</title>
+</head>
+
+<body>
+  <h1>Products!</h1>
+  {{#each products}}
+  <ul id="productList">
+    <li>
+      Id:{{this.id}}
+    </li>
+    <li>
+      Product:{{this.title}}
+    </li>
+    <li>
+      Description:{{this.description}}
+    </li>
+    <li>
+      Code:{{this.code}}
+    </li>
+    <li>
+      Price:{{this.price}}
+    </li>
+    <li>
+      Status:{{this.status}}
+    </li>
+    <li>
+      Stock:{{this.stock}}
+    </li>
+    <li>
+      Category:{{this.category}}
+    </li>
+    <li>
+      Thumbnail:{{this.thumbnail}}
+    </li>
+  </ul>
+  {{/each}}
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index.js"></script>
+  {{!--
+  <script>
+    const socket = io();
+
+    socket.on('products', (products) => {
+      const productList = document.getElementById('productList');
+      productList.innerHTML = '';
+
+      products.forEach((product) => {
+        const li = document.createElement('li');
+        li.innerText = `${product.title} - ${product.description} - ${product.code} - ${product.price} - ${product.status} - ${products.stock} - ${product.category} - ${product.thumbnail}`;
+        productList.appendChild(li);
+      });
+    });
+  </script> --}}
+</body>
+
+</html>
