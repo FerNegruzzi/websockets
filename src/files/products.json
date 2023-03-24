@@ -31,5 +31,27 @@
 		"stock": 10,
 		"category": "bici",
 		"thumbnail": "http://img_auto"
+	},
+	{
+		"id": 4,
+		"title": "delete",
+		"description": "bmx",
+		"code": 2222323,
+		"price": 50,
+		"status": true,
+		"stock": 10,
+		"category": "autos",
+		"thumbnail": "http://img_auto"
+	},
+	{
+		"id": 5,
+		"title": "prueba",
+		"description": "skate",
+		"code": 1234,
+		"price": 50,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
 	}
 ]

@@ -2,10 +2,10 @@ const express = require('express');
 const handlebars = require('express-handlebars');
 const { Server } = require('socket.io');
 const router = require('./router');
+const ProductManager = require('./class/ProductManager');
+const productManager = new ProductManager('src/files/products.json');
 
 const port = 3000;
-
-const products = []
 
 const app = express();
 
@@ -25,13 +25,9 @@ const httpServer = app.listen(port, () => {
 
 const io = new Server(httpServer);
 
-io.on('connection', (socket) => {
-    console.log('Client connected');
+io.on('connection', async (socket) => {
+    console.log(`Client connected in ${socket.id}`);
 
-    socket.on('addProduct', product =>{
-        products.push(product)
-        console.log(products);
-
-        socket.broadcast.emit('productList', products)
-    })
+    const products = await productManager.getProducts();
+    io.emit("realTimeProducts", {products})
 })
