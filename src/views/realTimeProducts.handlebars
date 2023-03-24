@@ -10,51 +10,44 @@
 
 <body>
   <h1>Products!</h1>
-  {{#each products}}
   <ul id="productList">
-    <li id="title">
-      Product:{{this.title}}
-    </li>
-    <li id="description">
-      Description:{{this.description}}
-    </li>
-    <li id="code">
-      Code:{{this.code}}
-    </li>
-    <li id="price">
-      Price:{{this.price}}
-    </li>
-    <li id="status">
-      Status:{{this.status}}
-    </li>
-    <li id="stock">
-      Stock:{{this.stock}}
-    </li>
-    <li id="category">
-      Category:{{this.category}}
-    </li>
-    <li id="thumbnail">
-      Thumbnail:{{this.thumbnail}}
-    </li>
+    <li id="title"></li>
+    <li id="description"></li>
+    <li id="code"></li>
+    <li id="price"></li>
+    <li id="stock"></li>
+    <li id="category"></li>
+    <li id="thumbnail"></li>
   </ul>
-  {{/each}}
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/products.js"></script>
-  {{!--
-  <script>
-    const socket = io();
-
-    socket.on('products', (products) => {
-      const productList = document.getElementById('productList');
-      productList.innerHTML = '';
-
-      products.forEach((product) => {
-        const li = document.createElement('li');
-        li.innerText = `${product.title} - ${product.description} - ${product.code} - ${product.price} - ${product.status} - ${products.stock} - ${product.category} - ${product.thumbnail}`;
-        productList.appendChild(li);
-      });
-    });
-  </script> --}}
 </body>
 
 </html>
+
+
+{{!-- {{#each products}}
+<ul id="productList">
+  <li id="title">
+    Product:{{this.title}}
+  </li>
+  <li id="description">
+    Description:{{this.description}}
+  </li>
+  <li id="code">
+    Code:{{this.code}}
+  </li>
+  <li id="price">
+    Price:{{this.price}}
+  </li>
+  <li id="stock">
+    Stock:{{this.stock}}
+  </li>
+  <li id="category">
+    Category:{{this.category}}
+  </li>
+  <li id="thumbnail">
+    Thumbnail:{{this.thumbnail}}
+  </li>
+</ul>
+{{/each}} --}}

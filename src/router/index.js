@@ -4,8 +4,8 @@ const createProductController = require('../products/createProduct.controller')
 
 const router = app => {
     app.use('/products', productsController)
-    app.use('/realTimeProducts', realTimeProductsController)
-    app.use('/createProduct', createProductController)
+    app.use('/realtimeproducts', realTimeProductsController)
+    app.use('/createproduct', createProductController)
 }
 
 module.exports = router

@@ -10,7 +10,26 @@
 
 <body>
     <h1>Products!</h1>
-    {{#each products}}
+   <ul id="productList">
+        <li id="title"></li>
+        <li id="description"></li>
+        <li id="code"></li>
+        <li id="price"></li>
+        <li id="stock"></li>
+        <li id="category"></li>
+        <li id="thumbnail"></li>
+    </ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/products.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+ {{!-- {{#each products}}
     <ul id="productList">
         <li id="title">
             Product:{{this.title}}
@@ -24,9 +43,6 @@
         <li id="price">
             Price:{{this.price}}
         </li>
-        <li id="status">
-            Status:{{this.status}}
-        </li>
         <li id="stock">
             Stock:{{this.stock}}
         </li>
@@ -37,9 +53,4 @@
             Thumbnail:{{this.thumbnail}}
         </li>
     </ul>
-    {{/each}}
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/products.js"></script>
-</body>
-
-</html>
+    {{/each}} --}}
