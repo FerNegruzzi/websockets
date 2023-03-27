@@ -53,5 +53,38 @@
 		"stock": 10,
 		"category": "skateboarding",
 		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 6,
+		"title": "prueba_2",
+		"description": "skate_trucho",
+		"code": 12345667765,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 7,
+		"title": "prueba_3",
+		"description": "skate_trucho",
+		"code": 1234566776523,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 8,
+		"title": "prueba_4",
+		"description": "skate_trucho",
+		"code": 12345667726523,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
 	}
 ]

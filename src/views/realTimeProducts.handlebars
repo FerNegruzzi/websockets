@@ -10,7 +10,17 @@
 
 <body>
   <h1>Products in real time!</h1>
-  <div id="allProducts"></div>
+  {{#each products}}
+  <div>
+      <h1>Title: {{this.title}}</h1>
+      <h2>Description: {{this.description}}</h2>
+      <h2>Price: ${{this.price}}</li>
+      <h3>Id: {{this.id}}</h3>
+      <h3>Stock: {{this.stock}}</h3>
+      <h4>Category: {{this.category}}</h4>
+      <h5>Thumbnail: {{this.thumbnail}}</h5>
+  </div>
+  {{/each}}
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/index.js"></script>
 </body>
