@@ -55,6 +55,7 @@ router.post('/', (req, res) => {
         products.push(newProduct)
         productsFile.writeFileProducts(products)
         res.send({ message: 'product added' })
+        io.emit('newProductRealTime', {newProduct})
     } catch (error) {
         console.log(error);
     }

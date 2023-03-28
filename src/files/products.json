@@ -86,5 +86,93 @@
 		"stock": 10,
 		"category": "skateboarding",
 		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 9,
+		"title": "prueba_5",
+		"description": "skate_trucho",
+		"code": 1.2343434343456676e+21,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 10,
+		"title": "prueba_6",
+		"description": "skate_trucho",
+		"code": 1.2343434343456678e+25,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 11,
+		"title": "prueba_7",
+		"description": "skate_trucho",
+		"code": 1.2343434343456678e+28,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 12,
+		"title": "prueba_8",
+		"description": "skate_trucho",
+		"code": 1.2343434343456343e+31,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 13,
+		"title": "prueba_9",
+		"description": "skate_trucho",
+		"code": 1.2343434343456345e+34,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 14,
+		"title": "prueba_10",
+		"description": "skate_trucho",
+		"code": 1.2343434343456343e+38,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 15,
+		"title": "prueba_11",
+		"description": "skate_trucho",
+		"code": 1.2343434343456343e+42,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
+	},
+	{
+		"id": 16,
+		"title": "prueba_12",
+		"description": "skate_trucho",
+		"code": 1.2343434343456343e+46,
+		"price": 55,
+		"status": true,
+		"stock": 10,
+		"category": "skateboarding",
+		"thumbnail": "http://img_skate"
 	}
 ]

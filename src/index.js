@@ -29,5 +29,5 @@ io.on('connection', async (socket) => {
     console.log(`Client connected in ${socket.id}`);
 
     const products = await productManager.getProducts();
-    io.emit("realTimeProducts", products)
+    io.emit("realTimeProducts", {products})
 })

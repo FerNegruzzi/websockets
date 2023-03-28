@@ -1,23 +1,20 @@
 const socket = io();
 
-const productsContainer = document.getElementById('allProducts');
+const productsContainer = document.getElementById('newProduct');
 
-socket.on('realTimeProducts', (products) => {
-    let allProducts = [];
-    try {
-        allProducts = JSON.parse(products);
-    } catch (error) {
-        console.log('no se pudo parsear el archivo json', error);
-    }
-    if(Array.isArray(allProducts)){
-        productsContainer.innerHTML = '';
-        allProducts.forEach((product) => 
-            productsContainer.append(productContainer(product))
-        );
-    }else{
-        console.log('products no es un array');
-    }
+socket.on('realTimeProducts', (obj) => {
+    console.log(obj);
+    const { products } = obj;
+    productsContainer.innerHTML = '';
+    products.forEach((product) =>
+    productsContainer.append(productContainer(product))
+    );
 });
+
+socket.on('newProductRealTime', (newProduct) => {
+    console.log(newProduct);
+    productsContainer.append(productContainer(newProduct))
+})
 
 const productContainer = (product) => {
     const div = document.createElement('div');
